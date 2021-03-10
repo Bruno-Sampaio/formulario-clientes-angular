@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormularioClienteComponent } from './formulario-cliente/formulario-cliente.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioClienteComponent
+    FormularioClienteComponent,
+    TelaLoginComponent
   ],
   imports: [
     BrowserModule
