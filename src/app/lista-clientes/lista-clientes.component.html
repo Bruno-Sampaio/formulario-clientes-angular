@@ -1,8 +1,23 @@
-<div>
-
-<ul>
-<li>
-</li>
-</ul>
-
+<div class="container">
+    <div *ngIf="listaProdutos.length < 1">
+        <p>Item Fora de Estoque</p>
+    </div>
+    <div *ngIf="listaProdutos.length > 0">
+            <div *ngFor="let produto of listaProdutos">
+                    <div class="card">
+                        {{ produto.nome + " " + produto.valor }}
+                    </div>
+            </div>
+        </div>
+            <form>
+                <div class="form-group">
+                    <label for="">Nome</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Valor</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <button class="btn btn-primary"(click)="addProduto()">Cadastrar</button>
+            </form>
 </div>
