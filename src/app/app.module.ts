@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormularioClienteComponent } from './formulario-cliente/formulario-cliente.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
-import { ListaClientesComponent } from './lista-clientes/lista-clientes.component';
-import { FormsModule } from '@angular/forms';
+import { ListaClienteComponent } from './lista-clientes/lista-clientes.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -13,11 +13,13 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     FormularioClienteComponent,
     TelaLoginComponent,
-    ListaClientesComponent
+    ListaClienteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
